@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\URL;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +16,6 @@ use Illuminate\Support\Facades\URL;
 // Route::statamic('example', 'example-view', [
 //    'title' => 'Example'
 // ]);
-if (App::environment('production')) {
+if( env('APP_KINSTA') ) {
   URL::forceScheme('https');
 }
