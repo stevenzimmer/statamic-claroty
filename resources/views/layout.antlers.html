@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title ?? site:name }} | {{ site:name }} </title>
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
+        <link rel="icon" type="image/x-icon" href="/assets/functional-gaps.svg">
     </head>
     <body class="flex flex-col min-h-screen text-dark overflow-x-hidden">
         {{ template_content }}
