@@ -5,7 +5,7 @@ title: Homepage
 template: home
 author: 4f801d32-02d3-4ae7-86e5-0990eb673906
 updated_by: 4f801d32-02d3-4ae7-86e5-0990eb673906
-updated_at: 1708574323
+updated_at: 1708615012
 product_carousel:
   -
     id: lsw7f72m
