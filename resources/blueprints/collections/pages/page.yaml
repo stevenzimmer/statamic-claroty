@@ -25,6 +25,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              width: 50
           -
             handle: section_icon
             field:
@@ -41,6 +42,7 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+              width: 50
           -
             handle: product_carousel
             field:
