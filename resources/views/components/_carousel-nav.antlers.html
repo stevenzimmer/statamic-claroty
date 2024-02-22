@@ -1,0 +1,13 @@
+
+<div class="w-6 h-6 hover:bg-c-pink bg-c-pink/80 flex items-center justify-center cursor-pointer {{ if pos == "prev" }}
+ btn-prev
+{{ else }}
+btn-next
+{{ endif }}" >
+    <svg stroke="currentColor" class="group-hover:translate-x-0.5 transition-transform duration-200 text-white {{ if pos == "prev" }}
+    rotate-180 
+    {{ endif }}" width="15" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.5 4L10.5 8L6.5 12" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+    </svg>
+</div>
+

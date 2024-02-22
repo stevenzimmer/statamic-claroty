@@ -9,7 +9,21 @@ export default {
     ],
 
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                c: {
+                    pink: "#e20ab7",
+                    green: "#68b643"
+                }
+            },
+            container: {
+                center: true,
+                padding: "2.5rem",
+                screens: {
+                    xl: "80rem",
+                },
+            },
+        },
     },
 
     plugins: [

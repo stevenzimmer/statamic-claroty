@@ -3,6 +3,12 @@
 @import "tailwindcss/utilities";
 
 /* This is all you. */
-/* body {
-  @apply bg-black;
-} */
+.swiper-wrapper {
+  @apply  items-stretch ;
+
+ 
+}
+
+.swiper-slide {
+  @apply h-auto !important;
+}

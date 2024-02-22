@@ -1,0 +1,19 @@
+<div class="relative carousel-swiper overflow-hidden">
+    <div class="swiper-wrapper">
+    {{carousel}}     
+       <div class="swiper-slide relative">
+            {{ partial:components/carousel-slide :carousel="carousel" }}
+        </div>
+    {{/carousel}}
+    </div>
+    <div class="absolute right-6 lg:right-12 bottom-2 md:bottom-8 z-50">
+        <div class="flex items-center space-x-2">
+            {{ partial:components/carousel-nav pos="prev" }}
+
+            {{ partial:components/carousel-nav pos="next" }}
+        
+        </div>
+    </div>
+
+</div>
+

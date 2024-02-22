@@ -1,0 +1,43 @@
+<div class="flex flex-wrap h-full select-none">
+    <div class="w-full md:w-1/2 ">
+        {{ image }}
+        <div class="flex items-center justify-center w-full h-full bg-slate-100 py-6">
+            <img class="max-w-[300px] w-full h-auto md:max-w-[450px]" src="{{ url }}" alt="{{ alt }}" />
+        </div>
+        {{ /image }}
+    </div>
+    <div class="w-full md:w-1/2 relative  ">
+        <div class="bg-white p-6 lg:p-12 h-full ">
+            <div class="py-6 lg:py-0">
+              {{ if header }}
+              <h3 class="text-3xl font-semibold mb-6">{{header}}</h3>
+              {{ endif }}
+              {{ if content }}
+              <div class="prose mb-6">
+              {{ content }}
+              </div>
+              {{ endif }}
+
+              {{ if link }}
+              <a href="{{ link }}" class="flex items-center group mb-6 md:mb-12">
+                <div class="">
+                  <p class="text-base text-c-green font-semibold">{{ if link_text }} {{ link_text }} {{ else }} Learn More {{ endif }}</p>
+                  </div>
+                  <div class="px-2">
+                  <svg stroke="currentColor" class="group-hover:translate-x-0.5 transition-transform duration-200 text-c-green" width="12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></path></svg>
+                  
+                  </div>
+              </a>
+              {{endif }}
+            </div>
+
+            <div class="absolute bottom-0 md:bottom-6 left-0 w-full px-6 lg:px-12">
+              <div class="border-t py-3 ">
+              <p class="font-semibold">
+                {{count}} / {{ carousel | length }}
+              </p>
+              </div>
+          </div>
+      </div>    
+  </div>
+</div>
